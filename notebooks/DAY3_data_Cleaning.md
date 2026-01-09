@@ -1,5 +1,5 @@
 Day 3 — Data Cleaning & Feature Handling
-1. Goal of Day 4
+1. Goal of Day 3
 - The goal of Day 4 was to convert raw data into model-ready data.
 
 Key idea:
