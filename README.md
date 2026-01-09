@@ -11,5 +11,4 @@ This repository documents my 45-day journey of understanding Machine Learning co
 Day 1 – ML mindset and problem framing  
 
 Day 2 - Data Understanding and EDA  
-
 Day 3 - Data Cleaning and Feature Handling  
