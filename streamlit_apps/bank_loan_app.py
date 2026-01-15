@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from pathlib import Path
+import os
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
@@ -18,7 +18,9 @@ THRESHOLD = 0.3
 #Data loading
 @st.cache_data
 def load_data():
-    return pd.read_csv(r'C:\Users\vchan\OneDrive\Desktop\45-days-of-ml\datasets\bank_loan_data.csv')
+    base_dir = os.path.dirname(__file__)
+    data_path = os.path.join(base_dir, '..', 'datasets', 'bank_loan_data.csv')
+    return pd.read_csv(data_path)
 
 df = load_data()
 
