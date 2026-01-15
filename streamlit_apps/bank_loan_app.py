@@ -8,7 +8,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix
 
 #page configuration
-st.set_page_config(page_title='Bank loan risk model',page_icon='🏦',layout='centered')
+st.set_page_config(page_title='Bank Loan Risk Model',page_icon='🏦',layout='centered')
 st.title('🏦 Bank Loan Default Risk Model')
 st.write('A model made for Educational Purpose')
 
