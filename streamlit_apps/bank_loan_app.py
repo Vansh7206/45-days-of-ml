@@ -11,11 +11,7 @@ if "profile_saved" not in st.session_state:
     st.session_state.profile_saved = False
 
 # ---------------- PAGE CONFIG ----------------
-st.set_page_config(
-    page_title="Bank Loan Risk Model",
-    page_icon="🏦",
-    layout="centered"
-)
+st.set_page_config(page_title="Bank Loan Risk Model",page_icon="🏦",layout="centered")
 
 st.title("🏦 Bank Loan Default Risk Model")
 st.caption("Decision-support system for retail loan risk assessment")
@@ -50,18 +46,13 @@ def load_data():
 
 df = load_data()
 
-
 # ---------------- MODEL PIPELINE ----------------
 X = df.drop("default", axis=1)
 y = df["default"]
 
-X_temp, X_test, y_temp, y_test = train_test_split(
-    X, y, test_size=0.3, random_state=42, stratify=y
-)
+X_temp, X_test, y_temp, y_test = train_test_split(X, y, test_size=0.3, random_state=42, stratify=y)
 
-X_train, X_val, y_train, y_val = train_test_split(
-    X_temp, y_temp, test_size=0.2, random_state=42, stratify=y_temp
-)
+X_train, X_val, y_train, y_val = train_test_split(X_temp, y_temp, test_size=0.2, random_state=42, stratify=y_temp)
 
 for col in ["income", "loan_amount"]:
     X_train[col] = np.log1p(X_train[col])
@@ -112,7 +103,7 @@ if not st.session_state.profile_saved:
 else:
     st.subheader("🔍 Check for New Customer")
 
-    st.markdown(f"""
+    st.info(f"""
     **Applicant Summary**
     - Name: {first_name} {last_name}
     - Job Title: {job_title}
