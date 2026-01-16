@@ -45,10 +45,11 @@ if st.sidebar.button("💾 Save Changes"):
 @st.cache_data
 def load_data():
     base_dir = os.path.dirname(__file__)
-    data_path = os.path.join(base_dir, "datasets", "bank_loan_data.csv")
+    data_path = os.path.join(base_dir, '..', 'datasets', 'bank_loan_data.csv')
     return pd.read_csv(data_path)
 
 df = load_data()
+
 
 # ---------------- MODEL PIPELINE ----------------
 X = df.drop("default", axis=1)
