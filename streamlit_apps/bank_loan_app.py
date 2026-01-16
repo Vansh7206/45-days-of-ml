@@ -103,7 +103,7 @@ if not st.session_state.profile_saved:
 else:
     st.subheader("🔍 Check for New Customer")
 
-    st.info(f"""
+    st.success(f"""
     **Applicant Summary**
     - Name: {first_name} {last_name}
     - Job Title: {job_title}
