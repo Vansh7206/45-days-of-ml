@@ -14,5 +14,6 @@ Day 2 - Data Understanding and EDA
 Day 3 - Data Cleaning and Feature Handling  
 Day 4 - Logistic Regression and Threshold tuning    
 Day 5- Practice and Feature Engineering         
-Day 6 - Model Evaluation and 1 Model deployment
-Day 7 - Streamlit Practice with Model UI improvement
+Day 6 - Model Evaluation and 1 Model deployment         
+Day 7 - Streamlit Practice with Model UI improvement    
+Day 8 - KNN and why it sucks at scale
