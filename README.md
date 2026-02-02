@@ -16,4 +16,5 @@ Day 4 - Logistic Regression and Threshold tuning
 Day 5- Practice and Feature Engineering         
 Day 6 - Model Evaluation and 1 Model deployment         
 Day 7 - Streamlit Practice with Model UI improvement    
-Day 8 - KNN and why it sucks at scale
+Day 8 - KNN and why it sucks at scale   
+Day 9 - Decision Trees
